@@ -3,25 +3,24 @@ import { Geist, Geist_Mono, Bad_Script } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
+const badScript = Bad_Script({
+    subsets: ["latin"],
+    weight: "400"
+});
+
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const badScript = Bad_Script({
-  variable: "--font-bad-script",
-  subsets: ["latin"],
-  weight: "400",
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Project Green Sweep",
-  description: ""
+    title: "Project Green Sweep",
+    description: ""
 };
 
 export const viewport: Viewport = {
@@ -29,18 +28,16 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={`${badScript.className} antialiased bg-[#eaffe6]`}>
+                {children}
+                <Footer />
+            </body>
+        </html>
+    );
 }

@@ -1,13 +1,6 @@
-import { Bad_Script } from "next/font/google";
-
-const badScript = Bad_Script({
-    subsets: ["latin"],
-    weight: "400"
-});
-
-export default function Page(){
+export default function Events() {
     return(
-        <main className={badScript.className} style={{ textAlign: 'center', padding: '50px', position: 'relative' }}>
+        <main style={{ textAlign: 'center', padding: '50px', position: 'relative', paddingBottom: '150px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-evenly', gap: '20px' }}>
                 <div style={{ flexGrow: 1, minWidth: '300px', padding: '10px', borderRadius: '10px' }}>
                     <h1 style={{ fontSize: '3.5em', margin: '0.5em 0', width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>New Event</h1>

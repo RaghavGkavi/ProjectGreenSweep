@@ -22,7 +22,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <div className="bg-[#eaffe6] text-black min-h-screen flex flex-col justify-center items-center text-center">
+        <div className="text-black min-h-screen flex flex-col justify-center items-center text-center">
             <div className="flex flex-col justify-center items-center text-center text-black space-y-4 py-40">
                 {/* title */}
                 <div className='p-4 bg-[#ffd12e]'>
@@ -50,21 +50,21 @@ export default function HeroSection() {
 
                 {/* stats */}
                 <div className="h-full absolute rotate-[-30deg]">
-                    <div className="flex flex-col items-center bg-[#39c161] p-4 rounded-3xl text-3xl">
-                        <p>5</p>
-                        <p>Events</p>
+                    <div className="flex flex-col items-center bg-[#39c161] p-4 rounded-3xl">
+                        <p className='text-3xl'>5</p>
+                        <p className='text-xl'>EVENTS</p>
                     </div>
                 </div>
                 <div className="h-full absolute rotate-[0deg]">
-                    <div className="flex flex-col items-center bg-[#39c161] p-4 rounded-3xl text-3xl">
-                        <p>5</p>
-                        <p>Volunteers</p>
+                    <div className="flex flex-col items-center bg-[#39c161] p-4 rounded-3xl">
+                        <p className='text-3xl'>5</p>
+                        <p className='text-xl'>VOLUNTEERS</p>
                     </div>
                 </div>
                 <div className="h-full absolute rotate-[30deg]">
-                    <div className="flex flex-col items-center bg-[#39c161] p-4 rounded-3xl text-3xl">
-                        <p>5</p>
-                        <p>Hours</p>
+                    <div className="flex flex-col items-center bg-[#39c161] p-4 rounded-3xl">
+                        <p className='text-3xl'>5</p>
+                        <p className='text-xl'>HOURS</p>
                     </div>
                 </div>
 
