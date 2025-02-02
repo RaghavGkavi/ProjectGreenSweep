@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import { basePath } from '../../next.config';
 
 export default function HeroSection() {
     const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
@@ -42,7 +43,7 @@ export default function HeroSection() {
                 {/* globe */}
                 <Image
                     className='p-12'
-                    src="/globe.png"
+                    src={`${basePath}/globe.png`}
                     alt="globe"
                     width={globeDiameter}
                     height={globeDiameter}
@@ -111,7 +112,7 @@ function InfiniteCarousel({ imageHeight }: { imageHeight: number }) {
                     <Image
                         key={index}
                         className='border-8 border-black rounded-lg transform duration-200 hover:scale-105'
-                        src={src}
+                        src={`${basePath}/${src}`}
                         alt='carousel image'
                         width={imageHeight}
                         height={imageHeight}

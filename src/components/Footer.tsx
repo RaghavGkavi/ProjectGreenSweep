@@ -2,13 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import { FaInstagram, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
+import { basePath } from '../../next.config';
 
 export default function Footer() {
     return (
         <footer className="bg-gray-800 text-white py-20 text-center">
             <div className="flex flex-col items-center">
                 <Image
-                    src="/logo.png"
+                    src={`${basePath}/logo.png`}
                     alt="Logo"
                     className="w-96 mb-2"
                     width={100}
