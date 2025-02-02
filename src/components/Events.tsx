@@ -7,7 +7,7 @@ const badScript = Bad_Script({
 
 export default function Page(){
     return(
-        <main className={badScript.className} style={{ textAlign: 'center', padding: '50px', position: 'relative' }}>
+        <main className={badScript.className} style={{ textAlign: 'center', padding: '50px', position: 'relative', color: 'black' }}>
             <div style={{ display: 'flex', justifyContent: 'space-evenly', gap: '20px' }}>
                 <div style={{ flexGrow: 1, minWidth: '300px', padding: '10px', borderRadius: '10px' }}>
                     <h1 style={{ fontSize: '3.5em', margin: '0.5em 0', width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>New Event</h1>
