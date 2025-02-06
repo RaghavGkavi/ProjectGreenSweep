@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Bad_Script } from "next/font/google";
+import { Bad_Script, Sen, Ubuntu } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
@@ -8,15 +8,15 @@ const badScript = Bad_Script({
     weight: "400"
 });
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const sen = Sen({
     subsets: ["latin"],
+    weight: "400"
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const ubuntu = Ubuntu({
     subsets: ["latin"],
-});
+    weight: "400"
+})
 
 export const metadata: Metadata = {
     title: "Project Green Sweep",
@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${badScript.className} antialiased bg-[#eaffe6]`}>
+            <body className={`${ubuntu.className} antialiased bg-[#eaffe6]`}>
                 {children}
                 <Footer />
             </body>

@@ -23,7 +23,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <div className="text-black min-h-screen flex flex-col justify-center items-center text-center">
+        <div className="text-black min-h-screen max-w-[100vw] overflow-x-hidden flex flex-col justify-center items-center text-center">
             <div className="flex flex-col justify-center items-center text-center text-black space-y-4 py-40">
                 {/* title */}
                 <div className='p-4 bg-[#ffd12e]'>
@@ -43,7 +43,7 @@ export default function HeroSection() {
                 {/* globe */}
                 <Image
                     className='p-12'
-                    src={`${basePath}/globe.png`}
+                    src={`${basePath}globe.png`}
                     alt="globe"
                     width={globeDiameter}
                     height={globeDiameter}
@@ -112,7 +112,7 @@ function InfiniteCarousel({ imageHeight }: { imageHeight: number }) {
                     <Image
                         key={index}
                         className='border-8 border-black rounded-lg transform duration-200 hover:scale-105'
-                        src={`${basePath}/${src}`}
+                        src={`${basePath}${src}`}
                         alt='carousel image'
                         width={imageHeight}
                         height={imageHeight}
