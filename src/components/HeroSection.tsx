@@ -43,7 +43,7 @@ export default function HeroSection() {
                 {/* globe */}
                 <Image
                     className='p-12'
-                    src={`${basePath}globe.png`}
+                    src={`${basePath}/globe.png`}
                     alt="globe"
                     width={globeDiameter}
                     height={globeDiameter}
@@ -77,11 +77,11 @@ export default function HeroSection() {
 }
 
 const images = [
-    '/cleanup.jpg',
-    '/cleanup.jpg',
-    '/cleanup.jpg',
-    '/cleanup.jpg',
-    '/cleanup.jpg',
+    'cleanup.jpg',
+    'cleanup.jpg',
+    'cleanup.jpg',
+    'cleanup.jpg',
+    'cleanup.jpg',
 ];
 
 function InfiniteCarousel({ imageHeight }: { imageHeight: number }) {
@@ -112,7 +112,7 @@ function InfiniteCarousel({ imageHeight }: { imageHeight: number }) {
                     <Image
                         key={index}
                         className='border-8 border-black rounded-lg transform duration-200 hover:scale-105'
-                        src={`${basePath}${src}`}
+                        src={`${basePath}/${src}`}
                         alt='carousel image'
                         width={imageHeight}
                         height={imageHeight}

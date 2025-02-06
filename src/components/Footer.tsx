@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className="bg-gray-800 text-white py-20 text-center">
             <div className="flex flex-col items-center">
                 <Image
-                    src={`${basePath}logo.png`}
+                    src={`${basePath}/logo.png`}
                     alt="Logo"
                     className="w-96 mb-2"
                     width={100}
