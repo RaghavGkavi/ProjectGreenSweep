@@ -10,10 +10,10 @@ export default function Page(){
                 </div>
             </div>
             <div className="flex-grow min-w-[300px] p-2.5 rounded-lg">
-                <h1 className="text-5xl my-2 w-4/5 mx-auto">New Event</h1>
-                <p className="text-2xl my-2 w-4/5 mx-auto">Event Description</p>
+                <h1 className="text-5xl my-2 w-4/5 mx-auto">Sign up for leadership!</h1>
+                <p className="text-2xl my-2 w-4/5 mx-auto">We are currently looking for people interested in joining as a member! Sign up using the link below!</p>
                 <div className="flex justify-center">
-                <iframe width="500" height="281" src="https://www.runwaymobile.app"></iframe>
+                <iframe width="500" height="281" src="https://docs.google.com/forms/d/e/1FAIpQLSdN5HCIHy1OcgOwhx153N8IKlvmwQ4eH7fJLiPY-3H-6mGLLA/viewform"></iframe>
                 </div>
             </div>
             </div>
